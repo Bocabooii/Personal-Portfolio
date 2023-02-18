@@ -30,26 +30,45 @@ ul {
   }
 
 main {
-  display: flex;
+  flex-wrap: wrap;
 }
 
-main img {
+.main-section img {
   height: 500px;
+  margin-left: 100px;
+  border-radius: 20px;
+}
+
+.intro-section {
+  display: flex;
 }
 
 .about-me {
   font-size: 70px;
-  float: left;
-  padding-left: 20px;
-  margin-top: 150px;
 }
 
 .about-me-text {
-  display: flex;
   font-size: 20px;
   line-height: 1.5;
-  float: right;
-  padding-left: 20px;
-  margin-right: 200px;
 }
 
+article {
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.project-cards h2 {
+  color: darkblue;
+  
+}
+
+.project-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 25%;
+  margin-left: 25%;
+  border-left: 20px solid black;
+
+}
